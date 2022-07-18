@@ -1,0 +1,16 @@
+body {
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(P_A.JPG);
+    color: white;
+}
+
+.main {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      color: white;
+      overflow-y: scroll;
+      font-size: 24px;
+    }

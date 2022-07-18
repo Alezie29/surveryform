@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+    <title>U-time Survery Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+<body>
+<header>
+    <h1 id="title">U-Time Fitness Survey Form</h1>
+    <p id="description">Thank you for taking the time to improve our service!</p>
+</header>
+<main>
+    <form id="survey-form"> 
+        <fieldset>
+            <label for="name" id="name-label">Enter Your First Name: <input id="name" type="text" required placeholder="Enter your name"/></label>
+            <label for="email" id="email-label">Enter Your Email: <input type="email" id="email" required placeholder="Enter your email"/></label>
+            <label for="number" id="number-label">Input your age (years): <input type="number" id="number" min="13" max="120" placeholder="Enter your age"/>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label> How long have you been a member of U-time?
+                <select id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">Less than a Month</option>
+                    <option value="2">More than a Months</option>
+                    <option value="3">More than 6 Months</option>
+                    <option value="4">More than a year</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset> 
+            <label> How did you hear about us?
+                <select id="reference">
+                    <option value="">(select one)</option>
+                    <option value="1">Facebook</option>
+                    <option value="2">Instagram</option>
+                    <option value="3">Website</option>
+                    <option value="4">Walk in</option>
+                    <option value="5">Word of Mouth</option>
+                    <option value="6">Advertisements</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+        <label>Would you recommend U-time to a friend?</label>
+            <label><input type="radio" name="member-status" class="inline" value="definitely"/> Definitely </label>
+            <label><input type="radio" name="member-status" class="inline" value="maybe" /> Maybe </label>
+            <label><input type="radio" name="member-status" class="inline" value="not-sure"/> Not sure </label>
+        </fieldset>
+        <fieldset>
+            <label>What would you like to see improved in the U-time gym?</label>
+            <label><input id="equipment" type="checkbox" name="improvement" class="inline" value="equipment">Facilities/Wider range of gym equipment</label>
+            <label><input id="cleanliness" type="checkbox" name="improvement" class="inline" value="cleanliness">Cleanliness</label>
+            <label><input id="staff-behaviour" type="checkbox" name="improvement" class="inline" value="staff-behaviour">Staff behaviour</label>
+            <label><input id="pricing" type="checkbox" name="improvement" class="inline" value="pricing">Payment options/amounts</label>
+            <label><input id="other" type="checkbox" name="improvement" class="inline" value="other">Other</label>
+        </fieldset>
+        <fieldset>
+            <label>If you ticked "Other", please give a brief explanation of what aspect you wish to be improved in the box below.</label>
+            <textarea name="bio" rows="3" cols="30" placeholder="What do you wish for us to improve on?"></textarea>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+        </form>
+        </main>
+        </body>
+        </html>
